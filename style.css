@@ -1,0 +1,115 @@
+body {
+    background: #242424;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+  }
+  
+  ul, li {
+    list-style: none;
+    /* list-style: lower-roman; */
+  
+    /* font-size: 32px; */
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+  
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header  span {
+    color: #ffce15;
+  }
+  
+  .header::after{
+    content: "";
+    width: 79px;
+    height: 4px;
+    background: #ffce15;
+  }
+  
+  .image-con {
+    width: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image {
+    border: 8px solid #ffce15;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .about-me {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  
+  }
+  
+  
+  .text-body {
+    width: 50%;
+  }
+  
+  .name span {
+    color: #ffce15;
+  }
+  
+  .goal {
+    padding-top: 2rem;
+  }
+  
+  .goal li {
+    padding: .5rem;
+    list-style: lower-roman;
+  }
+  
+  .marquee {
+    margin: 2rem 1rem;
+  }
+  
+  /* Responsiveness */
+  
+  @media only screen and (max-device-width: 768px) {
+         /* styles for mobile browsers smaller than 480px; (iPhone) */
+  
+         .about-me {
+          flex-direction: column;
+          padding: 2rem;
+         }
+  
+         .image-con {
+          width: 100%;
+         }
+  
+         .image {
+          width: 400px;
+          height: 400px;
+        }
+  
+         .text-body {
+          width: 100%;
+         }
+      }
